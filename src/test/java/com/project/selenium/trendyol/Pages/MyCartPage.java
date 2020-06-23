@@ -16,12 +16,17 @@ public class MyCartPage {
 	  }
 	 
 	 
-	public String mycartcost = driver.findElement(By.xpath("//*[@id=\"basketContent\"]/div[3]/div/div/ul/li/div[2]/div[4]/div[2]")).getText();
-    WebElement mycart = driver.findElement(By.xpath("//*[@id=\"myBasketListItem\"]/div[1]/a/i"));
+    public String mycartcost = 
+           driver.findElement(By.xpath("//*[@id=\"basketContent\"]/div[3]/div/div/ul/li/div[2]/div[4]/div[2]")).getText();
+	
+    WebElement mycart = 
+           driver.findElement(By.xpath("//*[@id=\"myBasketListItem\"]/div[1]/a/i"));
     
-    WebElement itemdelete = driver.findElement(By.xpath("//*[@id=\"basketContent\"]/div[3]/div/div/ul/li/div[2]/div[5]/a"));
-    WebElement itemdeletesure = driver.findElement(By.xpath("  //*[@id=\"ngdialog1\"]/div[2]/form/div/div[2]/div/button[2]\r\n" + 
-    		""));
+    WebElement itemdelete = 
+           driver.findElement(By.xpath("//*[@id=\"basketContent\"]/div[3]/div/div/ul/li/div[2]/div[5]/a"));
+	
+    WebElement itemdeletesure = 
+           driver.findElement(By.xpath("  //*[@id=\"ngdialog1\"]/div[2]/form/div/div[2]/div/button[2]\r\n" + ""));
 
     public String emptycart = driver.findElement(By.xpath("//*[@id=\"basketNoProductPage\"]/div[2]/div/div[1]/p/span")).getText();
     
